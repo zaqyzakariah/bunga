@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <style>
+        /* Neon Button Styles */
+        body {
+            background-image: url(dyann.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(32, 41, 44, 0.123);
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .neon-button {
+            display: inline-block;
+            padding: 15px 30px;
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+            position: relative;
+            border: none;
+            background-color: transparent;
+            overflow: hidden;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .neon-button:before,
+        .neon-button:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .neon-button:before {
+            background: cyan; /* Warna neon button */
+            box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan, 0 0 50px cyan, 0 0 60px cyan;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .neon-button:after {
+            background: #fff;
+            box-shadow: 0 0 10px rgb(228, 10, 192), 0 0 20px cyan, 0 0 30px cyan;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .neon-button:hover {
+            background-color: transparent;
+        }
+
+        .neon-button:hover:before,
+        .neon-button:hover:after {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="greetings">
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>O</span>
+        <span>W</span>
+    </div>
+    <div class="greetings">
+        <span>D</span>
+        <span>Y</span>
+        <span>A</span>
+        <span>N</span>
+    </div>
+    <div class="description">
+        <span>aku punya sesuatu buat kamu</span>
+    </div>
+    <div class="description">
+        <span>semoga suka ya >_<</span>
+    </div>
+    <div class="button">
+        <button class="neon-button">
+            <a href="bunga.html">klik disini</a>
+        </button>
+    </div>
+
+    <audio controls autoplay>
+        <source src="audio/keep on loving you.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
